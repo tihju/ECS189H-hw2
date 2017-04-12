@@ -1,0 +1,94 @@
+/* CSS file for Celebrating Spring page layout */
+
+body{
+  /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+background-color: #F9F0D7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* need this line to
+     tell body to fill viewport */
+}
+
+article{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 80px;
+}
+
+/*these are for the header*/
+ul#pic-title{
+  width: 100%;
+  list-style-type: none;
+  background-color: #86B14D;
+  overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li#right{
+  float: right;
+  padding: 10px 15px;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+a:hover{
+  background-color: white;
+}
+
+/*for both of the buttons*/
+button{
+  background-color: #38602E;
+  font-size: 16px;
+  border-radius: 24px;
+  float: right;
+}
+
+/*quote*/
+div#donate{
+  /*font-family: Georgia, serif;
+  position: relative;
+  margin: 3em;
+  padding: 3em 3em 3em 3em;*/
+}
+
+/*special text*/
+p#itext{
+  text-align: center;
+  font-family: 'Tanerine',serif;
+  font-size: 24px;
+}
+
+/* this season's seed*/
+ul#memuTitle{
+  /*width: 100%;*/
+  list-style-type: none;
+}
+
+li#titileButton{
+  float:right;
+}
+
+div#memuTitle{
+  display: flex;
+  flex-direction: row;
+}
+
+div.image{
+  float:left;
+  /*justify-content: space-around;*/
+  padding: 15px;
+}
+
+footer{
+  text-align: center;
+  background-color: #38602E;
+  height: 30px;
+  padding: 15px 10px;
+}
