@@ -9,74 +9,82 @@
 </head>
 
 <body>
-  <header>
-    <img src="Assets/logo.png" />
-      <nav>
-        <ul id="pic-title">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">EVENTS</a></li>
-          <li><a href="#">SHOP</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li id="right">
-            <form>
-              <span><input type="text" class="search rounded" placeholder="search"></span>
-            </from>
-          </li>
-        </ul>
-      </nav>
-  </header>
+  <!--header-->
+    <div class="image-group">
+      <div class="img-container1">
+        <img src="Assets/logo.png" />
+      </div>
 
-<article>
-  <div id="donate">
-    <p><q><b>Our mission</b> fhgfis to educate the public, especially our childen, about the value of a farm to table community food system that also teaches us to value the environment.</q>
+      <div class="image-container2">
+        <img id="barMenu" src="Assets/menu.png" />
+      <div>
+    </div>
+
+    <div class="navigation">
+      <nav>
+          <a href="#">HOME</a>
+          <a href="#">NEWS</a>
+          <a href="#">EVENTS</a>
+          <a href="#">SHOP</a>
+          <a href="#">CONTACT</a>
+      </nav>
+
+      <form>
+        <input type="image" id="icon" src="searchIcon.png" width="20px" height="20px"/>
+        <input type="search" id="search" placeholder="search"/>
+      </from>
+
+    </div>
+  <!--/header-->
+
+  <div class="donate">
+    <p><q><b>Our mission</b> is to educate the public, especially our childen, about the value of a farm to table community food system that also teaches us to value the environment.</q>
     </p>
-    <button>donate</button>
+    <button class="donateButton">donate</button>
   </div>
 
   <p id="itext">You Only Live Once - plant vegetables!</p>
 
   <div>
 
-    <ul id="memuTitle">
-      <li><strong>This season's seeds</strong></li>
-      <li id="titileButton"><button>shop</button></li>
-    </ul>
+    <div class="memuTitle">
+      <p class="title"><strong>This season's seeds</strong></p>
+      <button class="shopButton">shop</button>
+    </div>
 
-    <div class="image">
-      <div class="image">
+    <div class="images">
+      <div class="indivImage">
         <img src="Assets/beans.jpg" alt="image can't access"/>
         <p>Green Been</p>
       </div>
 
-      <div class="image">
+      <div class="indivImage">
         <img src="Assets/carrot.jpg" alt="image can't access"/>
         <p>Carrot</p>
       </div>
 
-      <div class="image">
+      <div class="indivImage">
         <img src="Assets/pepper.jpg" alt="can't show pepper"/>
         <p>Bell Pepper</p>
       </div>
 
-      <div class="image">
+      <div class="indivImage">
         <img src="Assets/potato.jpg" alt="potato is missing"/>
         <p>Potato</p>
       </div>
 
-      <div class="image">
+      <div class="indivImage">
         <img src="Assets/squash.jpg" alt="squash is gone"/>
         <p>Squash</p>
       </div>
 
-      <div class="image">
+      <div class="indivImage">
         <img class="image" src="Assets/tomato.jpg" alt="no tomato"/>
-        <p class="text">Tomato</p>
+        <p>Tomato</p>
       </div>
     </div>
 
   </div>
-</article>
 
   <footer>@2016 Yolo Farm to Fork</footer>
 

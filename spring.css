@@ -2,91 +2,122 @@
 
 body{
   /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
-background-color: #F9F0D7;
-  display: flex;
-  flex-direction: column;
+  background-color: #F9F0D7;
+  /*display: flex;
+  flex-direction: column;*/
   min-height: 100vh;  /* need this line to
      tell body to fill viewport */
 }
 
-article{
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 80px;
+/*.img-group img{
+  width: 25%;
+  height: auto;
+}*/
+
+.img-container1{
+  display: flex;
 }
+
+.img-container2{
+  display: flex;
+}
+
+div.navigation{
+  background-color: #86B14D;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 
 /*these are for the header*/
-ul#pic-title{
-  width: 100%;
-  list-style-type: none;
-  background-color: #86B14D;
-  overflow: hidden;
+nav{
+  /*background-color: #86B14D;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 2;
 }
 
-li{
-    float: left;
-}
-
-li#right{
-  float: right;
-  padding: 10px 15px;
-}
-
-li a {
+a {
   display: block;
   text-decoration: none;
+  color: inherit;
   padding: 10px 15px;
 }
 
 a:hover{
-  background-color: white;
-}
-
-/*for both of the buttons*/
-button{
-  background-color: #38602E;
-  font-size: 16px;
-  border-radius: 24px;
-  float: right;
+  background-color: #F9F0D7;
 }
 
 /*quote*/
-div#donate{
-  /*font-family: Georgia, serif;
-  position: relative;
-  margin: 3em;
-  padding: 3em 3em 3em 3em;*/
+div.donate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*padding: 40px;*/
+}
+
+.donate p{
+  /*padding-left: 40px;
+  padding-right: 40px;*/
 }
 
 /*special text*/
 p#itext{
-  text-align: center;
+  display: flex;
   font-family: 'Tanerine',serif;
-  font-size: 24px;
+  justify-content: center;
+  padding: 40px;
 }
 
 /* this season's seed*/
-ul#memuTitle{
-  /*width: 100%;*/
-  list-style-type: none;
-}
-
-li#titileButton{
-  float:right;
-}
-
-div#memuTitle{
+div.memuTitle{
   display: flex;
   flex-direction: row;
 }
 
-div.image{
-  float:left;
-  /*justify-content: space-around;*/
-  padding: 15px;
+p.title{
+  flex-grow: 2;
+}
+
+button{
+  background-color: #38602E;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  display: inline-flex;
+  font-size: 12;
+  border-radius: 20px;
+}
+
+div.images{
+  display: flex;
+  flex-direction: row;
+  /*float: left;*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*padding-left: 40px;*/
+  /*padding-right: 40px;*/
+}
+
+@media (max-width: 480px){
+  .img-container1{
+    display: block;
+  }
+  .img-container2{
+    display: none;
+  }
 }
 
 footer{
+  display: flex;
   text-align: center;
   background-color: #38602E;
   height: 30px;
