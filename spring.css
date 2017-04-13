@@ -9,24 +9,38 @@ body{
      tell body to fill viewport */
 }
 
-/*.img-group img{
-  width: 25%;
-  height: auto;
-}*/
+main{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.image-group{
+  display: flex;
+  flex-direction: row;
+}
 
 .img-container1{
   display: flex;
 }
 
-.img-container2{
+.img-container2 {
+  /*why this is not working*/
   display: flex;
+  /*visibility: hidden;*/
 }
 
-div.navigation{
+.barMenu{
+  display: none;
+  height: auto;
+  margin-left: auto;
+}
+
+.navigation{
   background-color: #86B14D;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 form{
@@ -57,34 +71,39 @@ a:hover{
 }
 
 /*quote*/
-div.donate{
+.donate{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   /*padding: 40px;*/
 }
 
-.donate p{
-  /*padding-left: 40px;
-  padding-right: 40px;*/
-}
-
 /*special text*/
-p#itext{
+.itext{
   display: flex;
-  font-family: 'Tanerine',serif;
+  font-family: 'Tangerine', serif;
   justify-content: center;
-  padding: 40px;
+  font-size: 40px;
+  padding: 20px;
 }
 
 /* this season's seed*/
-div.memuTitle{
+div.menuTitle{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
-p.title{
-  flex-grow: 2;
+.donateButton{
+  width: 50px;
+  margin-left: auto;
+}
+
+.shopButton{
+  width: 50px;
+  height: 20px;
+  margin-left: auto;
 }
 
 button{
@@ -92,8 +111,7 @@ button{
   border: none;
   text-decoration: none;
   text-align: center;
-  display: inline-flex;
-  font-size: 12;
+  /*font-size: 12;*/
   border-radius: 20px;
 }
 
@@ -108,17 +126,23 @@ div.images{
 }
 
 @media (max-width: 480px){
-  .img-container1{
+  .barMenu{
     display: block;
   }
-  .img-container2{
+  .donate{
+    display: none;
+  }
+  .itext{
+    display: none;
+  }
+  .navigation{
     display: none;
   }
 }
 
 footer{
   display: flex;
-  text-align: center;
+  justify-content: center;
   background-color: #38602E;
   height: 30px;
   padding: 15px 10px;
