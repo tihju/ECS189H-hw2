@@ -31,6 +31,7 @@ main{
 }
 
 .barMenu{
+  padding-top: 50px;
   display: none;
   height: auto;
   margin-left: auto;
@@ -47,6 +48,21 @@ form{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 7px;
+  width: auto;
+}
+
+form input{
+  background-image: url("searchIcon.png");
+  background-repeat: no-repeat;
+  background-position: 0px;
+  background-size: contain;
+}
+
+/* search box rounded*/
+#search{
+  border-radius: 15px;
+  position:relative;
 }
 
 
@@ -92,7 +108,8 @@ a:hover{
 div.menuTitle{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  padding: inherit;
 }
 
 .donateButton{
@@ -104,6 +121,11 @@ div.menuTitle{
   width: 50px;
   height: 20px;
   margin-left: auto;
+}
+
+.phoneButton{
+  width: 50px;
+  height: 20px;
 }
 
 button{
@@ -118,15 +140,26 @@ button{
 div.images{
   display: flex;
   flex-direction: row;
-  /*float: left;*/
   justify-content: space-between;
   flex-wrap: wrap;
-  /*padding-left: 40px;*/
-  /*padding-right: 40px;*/
+  padding-top: 8px;
+}
+
+.indivImage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.indivImage p{
+  text-align: center;
 }
 
 @media (max-width: 480px){
   .barMenu{
+    display: block;
+  }
+  .phoneButton{
     display: block;
   }
   .donate{
@@ -136,6 +169,24 @@ div.images{
     display: none;
   }
   .navigation{
+    display: none;
+  }
+  .menuTitle{
+    background-color: #38602E;
+  }
+  .shopButton{
+    display:none;
+  }
+  .phoneButton{
+    margin-left: 45%;
+    margin-bottom: 12%;
+    width: 60px;
+    height: 45px;
+  }
+}
+
+@media(min-width:480px){
+  .phoneButton{
     display: none;
   }
 }
