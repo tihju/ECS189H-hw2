@@ -57,6 +57,8 @@ form input{
   background-repeat: no-repeat;
   background-position: 0px;
   background-size: contain;
+  background-color: #D8E5CA;
+  width: 90px;
 }
 
 /* search box rounded*/
@@ -99,6 +101,7 @@ a:hover{
 .itext{
   display: flex;
   font-family: 'Tangerine', serif;
+  /*font-family: 'Italianno', serif;*/
   justify-content: center;
   font-size: 40px;
   padding: 20px;
@@ -140,7 +143,8 @@ button{
 div.images{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  justify-content: center;
   flex-wrap: wrap;
   padding-top: 8px;
 }
@@ -149,6 +153,7 @@ div.images{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 15px;
 }
 
 .indivImage p{
@@ -172,17 +177,22 @@ div.images{
     display: none;
   }
   .menuTitle{
-    background-color: #38602E;
+    background-color: #86B14D;
+    width: 100%;
+    height: 30px;
   }
   .shopButton{
     display:none;
   }
   .phoneButton{
     margin-left: 45%;
-    margin-bottom: 12%;
-    width: 60px;
-    height: 45px;
+
   }
+  div.images{
+    flex-direction: column;
+    justify-content: center;
+  }
+
 }
 
 @media(min-width:480px){
